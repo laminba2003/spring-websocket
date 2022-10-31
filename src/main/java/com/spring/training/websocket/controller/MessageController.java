@@ -10,7 +10,7 @@ public class MessageController {
 
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
-    public Message greeting(Message message) throws Exception {
+    public Message consume(Message message) {
         return message;
     }
 
